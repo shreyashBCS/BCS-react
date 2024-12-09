@@ -1,0 +1,50 @@
+.custom-margin {
+    margin-top: 120px;
+}
+body {
+    margin-top: 0; /* Reset any margin applied to the body */
+  }
+
+/* HOME PAGE CARDS */
+
+.feature-box {
+    border: 1px solid #ddd;
+    /* Border color */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the box */
+    text-align: center;
+    /* Center align text */
+    background-color: #fff;
+    /* Background color */
+    transition: transform 0.3s;
+    /* Smooth scaling on hover */
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.icon {
+    font-size: 40px;
+    /* Adjust icon size */
+    margin-bottom: 15px;
+    /* Space between icon and text */
+}
+
+
+/*  */
+
+@media (max-width: 768px) {
+    .map-section {
+      height: 200px;
+      /* Adjust map height for smaller screens */
+    }
+  
+    .form-section {
+      padding: 10px;
+      /* Reduce padding for small screens */
+    }
+  }
