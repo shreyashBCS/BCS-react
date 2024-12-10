@@ -1,19 +1,19 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/BrightCrestSolutions_Logo_Main.png';
-
+import '../App.css'
 const NavigationBar = () => {
   return (
     <>
-      <div>
-        <Navbar expand="lg" className="py-3 fixed-top">
+      <div className='navbar-container fixed-top'>
+        <Navbar expand="lg" className="py-3 ">
           <Navbar.Brand href="/">
             <img
               src={logo}
               alt="Brightcrestlogo"
               width="150" // Adjust width as needed
               height="auto"
-              style={{ marginLeft: "15px" }}
+              style={{ marginLeft: "22px" }}
             />
 
           </Navbar.Brand>
@@ -27,7 +27,7 @@ const NavigationBar = () => {
               <Nav.Link href="/about" className="text-dark">About</Nav.Link>
               <Nav.Link href="/client" className="text-dark">Clients</Nav.Link>
 
-              <Nav.Link style={{ marginRight: "12px" }} href="/contact" className="text-dark">Contact</Nav.Link>
+              <Nav.Link style={{ marginRight: "20px" }} href="/contact" className="text-dark">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

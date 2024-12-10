@@ -26,5 +26,6 @@ function App() {
     </>
   )
 }
+// Method 1: Using react-typing-effect
 
 export default App

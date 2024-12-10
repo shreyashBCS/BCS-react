@@ -115,10 +115,10 @@ function HomePage() {
 
 
 
-{/* -------------------------------------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------- */}
       <div className="w-100 d-flex justify-content-between align-items-center" style={{ backgroundColor: "#8151B9", height: "120px" }}>
-        <p style={{marginLeft:"12px"}}>Subscribe to our newsletter</p>
-        <button className="btn btn-primary" style={{marginRight:"12px"}}>Subscribe Now</button>
+        <p style={{ marginLeft: "12px" }}>Subscribe to our newsletter</p>
+        <button className="btn btn-primary" style={{ marginRight: "25px" }}>Subscribe Now</button>
       </div>
 
     </>
