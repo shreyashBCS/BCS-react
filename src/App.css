@@ -5,6 +5,7 @@
 body {
   margin-top: 0;
   /* Reset any margin applied to the body */
+  overflow-x: hidden;
 }
 
 /* HOME PAGE CARDS */
@@ -37,7 +38,7 @@ body {
 }
 
 
-/*  */
+/* MAP ,FORM (CONTACT US SECTION) */
 
 @media (max-width: 768px) {
   .map-section {

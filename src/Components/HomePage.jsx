@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaCode, FaLaptop, FaLifeRing, FaClock, FaCogs } from 'react-icons/fa';
 import '../App.css'
-
+import ReactTypingEffect from 'react-typing-effect';
 
 function HomePage() {
-  const phrases = [
+
+  const text = [
     "Deliver Automation Solutions for Your Business.",
     "Implement Seamless Integrations.",
     "Execute Strategic Digital Marketing.",
@@ -14,20 +15,31 @@ function HomePage() {
     "Drive Digital Marketing Success for Your Organization."
   ];
 
-  const [currentPhrase, setCurrentPhrase] = useState(phrases[0]); // Initialize with the first phrase
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * phrases.length);
-      setCurrentPhrase(phrases[randomIndex]); // Change to a random phrase
-    }, 2000); // Change every 3 seconds
-
-    return () => clearInterval(intervalId); // Cleanup on component unmount
-  }, []);
 
   return (
     <>
-      <div className='text-center custom-margin' >
+
+      <ReactTypingEffect
+        text={["Deliver Automation Solutions for Your Business.",
+          "Implement Seamless Integrations.",
+          "Execute Strategic Digital Marketing.",
+          "Achieve Impactful Creative Services.",
+          "Develop Custom Web Solutions.",
+          "Drive Digital Marketing Success for Your Organization."]}
+        speed={600}
+        eraseDelay={2000}
+        typingDelay={1000}
+        displayTextRenderer={(text, i) => {
+          return (
+            <h3 style={{ textAlign: "center", marginLeft: "350px", marginTop: "10px", color: "blue" }}> Let Us {text}</h3>
+          )
+        }}
+      />
+
+
+
+      {/* <div className='text-center custom-margin' >
         <h5>Let us   {currentPhrase}</h5>
         <p className='mt-5' style={{ fontSize: "19px" }}>At BrightCrest Solutions, we are dedicated to transforming the way businesses leverage technology. With a customer-first approach, we believe that understanding our clients’ needs is the key to delivering tailored IT and digital solutions that drive success. Our team of experts is committed to providing innovative and efficient solutions that empower businesses to thrive in today’s fast-paced digital landscape.</p>
 
@@ -38,7 +50,7 @@ function HomePage() {
 
 
 
-      </div>
+      </div> */}
       {/* --------------------------------------------------------------------------------------------------------------- */}
       <section className="bg--secondary py-5">
         <Container>
