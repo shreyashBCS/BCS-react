@@ -76,7 +76,7 @@ function Contact() {
   return (
     <>
       {/* Top Section */}
-      <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: '30vh', marginTop: '94px' }}>
+      <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: '30vh', marginTop: '20px' }}>
         <div className="text-center">
           <h5>Let's talk about your</h5>
           <h5>project</h5>
